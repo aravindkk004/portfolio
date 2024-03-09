@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --bg-color: #1f242d;
+    --bg-color2: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+#home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    flex-wrap: wrap;
+}
+
+.lefthome,.righthome{
+    flex-basis: 50%;
+}
+
+.lefthome{
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.lefthome span{
+    color: var(--main-color);
+}
+
+.lefthome h3{
+    font-size: 2.3rem;
+    color: var(--text-color);
+}
+
+.lefthome h1{
+    font-size: 3.7rem;
+    color: var(--text-color);
+}
+
+.lefthome p{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 20px 0px;
+    margin-bottom: 40px;
+}
+
+.lefthome button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 0.5rem var(--main-color);
+}
+
+.righthome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.righthome img{
+    height: 380px;
+    width: 350px;
+    border: 3px solid var(--main-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media all and (max-width: 830px){
+    .lefthome h1{
+        font-size: 2.8rem;
+    }
+    .lefthome h3{
+        font-size: 1.8rem;
+    }
+}
+
+@media all and (max-width: 740px){
+    #home{
+        flex-direction: column;
+    }
+    .righthome img{
+        margin-top: 50px;
+    }
+}
+
+@media all and (max-width: 450px){
+    .righthome img{
+        height: 300px;
+        width: 270px;
+    }
+}
